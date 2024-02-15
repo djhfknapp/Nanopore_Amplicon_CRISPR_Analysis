@@ -1,6 +1,6 @@
 # Nanopore Variant Analysis Pipeline
 
-This pipeline is designed for analyzing amplicon-based nanopore sequencing for CRISPR mediated mutations. It supports read alignment (using minimap2), variant calling (via bcftools), and basic variant summarization, providing insights into reference matches, insertions, deletions, and substitutions. Note, for the summary statistics output file, the reference percentages assume a single variant per read in the target site, and thus if multiple variants are present in a single read that impact the target site, the percent of reference bases will be underestimated.
+This pipeline is designed for analyzing amplicon-based nanopore sequencing for CRISPR mediated mutations. It supports read alignment (using minimap2), variant calling (via bcftools), and basic variant summarization, providing insights into reference matches, insertions, deletions, and substitutions. Note, for the summary statistics output file, the reference percentages assume a single variant per read in the target site, and thus if multiple variants are present in a single read that impact the target site, the percent of reference bases will be underestimated. Note, this is a basic pipeline that has not been extensively tested on multiple machines.
 
 ## Installation Guide
 
