@@ -52,13 +52,13 @@ python Nanopore_Variant_analysis.py --fastq_path <path_to_fastq> --ref_fasta <pa
 - `--min_alignment_quality <quality score>`: Minimum alignment quality score for alignments to be considered (default: 10).
 - `--max_depth <depth>`: Maximum read depth to consider in variant calling (default: 10000).
 
-###Example
+### Example
 
 ```sh
 
 python Nanopore_Variant_analysis.py --fastq_path barcode01 --ref_fasta SRSF2_offtargets.fasta --output_dir barcode01_out --targets Targets.txt --min_read_num 3 --min_read_percentage 0.1 --min_read_quality 16 --min_alignment_quality 16 --max_depth 10000
 ```
 
-##Contributing
+## Contributing
 
 Contributions to improve the pipeline or extend its functionality are welcome. Please submit pull requests or report issues via GitHub.
