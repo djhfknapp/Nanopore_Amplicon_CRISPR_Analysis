@@ -42,13 +42,13 @@ python Nanopore_Variant_analysis.py --fastq_path <path_to_fastq> --ref_fasta <pa
 ```
 ### Parameters
 
-- `--fastq_path <path>`: Specify the path to the FASTQ file or directory containing FASTQ files.
-- `--ref_fasta <path>`: Path to the reference genome FASTA file.
+- `--fastq_path <path>`: Specify the path to the FASTQ file or directory containing the FASTQ files. (The pipeline assumes a folder of fastq files that will first be pooled into a single one)
+- `--ref_fasta <path>`: Path to the reference genome FASTA file. *Note, the names of each amplicon must exactly match the names in your targets TSV file*
 - `--output_dir <path>`: Directory where output files will be saved.
-- `--targets <path>`: Path to a TSV file containing target sites for variant analysis.
+- `--targets <path>`: Path to a TSV file containing target sites for variant analysis. This should contain 2 columns with the amplicon name from the reference in the first and the expected target sequence in the second
 - `--min_read_num <number>`: Minimum number of reads supporting a variant (default: 3).
 - `--min_read_percentage <percentage>`: Minimum percentage of reads that support a variant, expressed as a percentage (e.g., for 10%, use 0.1 as the value; default: 0.1).
-- `--min_read_quality <quality score>`: Minimum quality score for reads to be considered in the analysis (default: 20).
+- `--min_read_quality <quality score>`: Minimum quality score for reads to be considered in the analysis (default: 18).
 - `--min_alignment_quality <quality score>`: Minimum alignment quality score for alignments to be considered (default: 10).
 - `--max_depth <depth>`: Maximum read depth to consider in variant calling (default: 10000).
 
